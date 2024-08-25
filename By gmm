@@ -1,0 +1,22 @@
+import numpy as np
+import pandas as pd
+from matplotlib import colors
+from tqdm import tqdm as tqdm
+%matplotlib inline
+import plotly as pl
+import plotly.graph_objs as go
+import plotly.express as px
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn import metrics
+# k_mean
+from sklearn.cluster import KMeans 
+# gmm
+from sklearn.mixture import GaussianMixture
+# misssing percentage 
+def missing_percentage(data):
+    """This function takes a DataFrame(df) as input and returns two columns, total missing values and total missing values percentage"""
+    total = data.isnull().sum().sort_values(ascending = False)
+    percent = round(data.isnull().sum().sort_values(ascending = False)/len(data)*100,2)
+    return pd.concat([total, percent], axis=1, keys=['Total','Percent'])
+missing_percentage(data)
