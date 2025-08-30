@@ -5,7 +5,7 @@ This project demonstrates how to use **K-Means Clustering** to segment customers
         
 ## Author: Shashank Pandey  
 
-## 📊 Project Overview
+## 📊 Project Overview  
 
 Customer segmentation is a crucial marketing strategy used to divide customers into groups that exhibit similar behavior. In this project, we apply **K-Means Clustering**, an unsupervised machine learning algorithm, to segment customers based on the `Annual Income` and `Spending Score` attributes.
 
